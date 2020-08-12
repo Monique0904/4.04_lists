@@ -1,0 +1,64 @@
+#program start
+
+#input section
+	
+	#create list faveThings and set it equal to ["1.Pizza ", "2.Hot Dogs ", "3.Mac and Cheese ", "4.Steak ", "5.Cookies "]
+	#create varable userFaves, set it equal to user input and convert input into lowercase 
+	
+#processing section
+
+	#create for loop with counter variable n which has a start value of 0 and an end value equal to the length of faveThings
+	#if user input euquals "pizza" then print "We both like pizza!" and continue prompting user if condition has not been met
+	#if user input euquals "hot dogs" then print "We both like hot dogs!" and continue prompting user if condition has not been met
+	#if user input euquals "mac and cheese" then print "We both like hot mac and cheese!" and continue prompting user if condition has not been met
+	#if user input euquals "steak" then print "We both like hot steak!" and continue prompting user if condition has not been met
+	#if user input euquals "cookies" then print "We both like hot cookies!" and continue prompting user if condition has not been met
+	#else print userFaves + " wasn't on my list but it sounds good!" and continue prompting user if condition has not been met
+		
+#output section
+
+	#display "We both like " or userFaves + "wasn't on my list but it sounds good!" depending on user input 
+	#display "These were the items on my list: " + faveThings[0] + faveThings[1] + faveThings[2] + faveThings[3] + faveThings[4]
+
+
+#eop
+
+
+
+
+def main():
+
+	faveThings = ["1.Pizza ", "2.Hot Dogs ", "3.Mac and Cheese ", "4.Steak ", "5.Cookies "]
+	
+	for n in range(0, len(faveThings)):
+	
+		userFaves = input("What is one of your top five favorite foods?").lower()
+		
+		if(userFaves == "pizza"):
+			print("We both like pizza!")
+			
+			
+		elif(userFaves == "hot dogs"):
+			print("We both like hot dogs!")
+			
+			
+		elif(userFaves == "mac and cheese"):
+			print("We both like mac and cheese!")
+			
+			
+		elif(userFaves == "steak"):
+			print("We both like steak!")
+			
+		
+		elif(userFaves == "cookies"):
+			print("We both like cookies!")
+			
+			
+		else:
+			print(userFaves + " wasn't on my list but it sounds good!")
+			
+		
+	print("These were the items on my list: " + faveThings[0] + faveThings[1] + faveThings[2] + faveThings[3] + faveThings[4])
+			
+
+main()
